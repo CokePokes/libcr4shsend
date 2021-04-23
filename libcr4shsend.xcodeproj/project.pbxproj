@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B514DBCD263384D4007912DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B514DBCC263384D4007912DA /* Foundation.framework */; };
+		B514DBD5263384D4007912DA /* libcr4shsend.mm in Sources */ = {isa = PBXBuildFile; fileRef = B514DBD4263384D4007912DA /* libcr4shsend.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B514DBC9263384D4007912DA /* libcr4shsend.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcr4shsend.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B514DBCC263384D4007912DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B514DBD1263384D4007912DA /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		B514DBD3263384D4007912DA /* libcr4shsend-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "libcr4shsend-Prefix.pch"; path = "../libcr4shsend-Prefix.pch"; sourceTree = "<group>"; };
+		B514DBD4263384D4007912DA /* libcr4shsend.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = libcr4shsend.mm; sourceTree = "<group>"; };
+		B514DBD9263384D4007912DA /* libcr4shsend.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = libcr4shsend.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B514DBC5263384D4007912DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B514DBCD263384D4007912DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B514DBBF263384D4007912DA = {
+			isa = PBXGroup;
+			children = (
+				B514DBCE263384D4007912DA /* libcr4shsend */,
+				B514DBCB263384D4007912DA /* Frameworks */,
+				B514DBCA263384D4007912DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B514DBCA263384D4007912DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBC9263384D4007912DA /* libcr4shsend.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B514DBCB263384D4007912DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBCC263384D4007912DA /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B514DBCE263384D4007912DA /* libcr4shsend */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBD4263384D4007912DA /* libcr4shsend.mm */,
+				B514DBCF263384D4007912DA /* Package */,
+				B514DBD2263384D4007912DA /* Supporting Files */,
+			);
+			path = libcr4shsend;
+			sourceTree = "<group>";
+		};
+		B514DBCF263384D4007912DA /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBD0263384D4007912DA /* DEBIAN */,
+				B514DBD6263384D4007912DA /* Library */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		B514DBD0263384D4007912DA /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBD1263384D4007912DA /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		B514DBD2263384D4007912DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBD3263384D4007912DA /* libcr4shsend-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B514DBD6263384D4007912DA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBD7263384D4007912DA /* MobileSubstrate */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		B514DBD7263384D4007912DA /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBD8263384D4007912DA /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		B514DBD8263384D4007912DA /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBD9263384D4007912DA /* libcr4shsend.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B514DBC6263384D4007912DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B514DBC8263384D4007912DA /* libcr4shsend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B514DBDC263384D4007912DA /* Build configuration list for PBXNativeTarget "libcr4shsend" */;
+			buildPhases = (
+				B514DBC4263384D4007912DA /* Sources */,
+				B514DBC5263384D4007912DA /* Frameworks */,
+				B514DBC6263384D4007912DA /* Headers */,
+				B514DBC7263384D4007912DA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libcr4shsend;
+			productName = libcr4shsend;
+			productReference = B514DBC9263384D4007912DA /* libcr4shsend.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B514DBC0263384D4007912DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				TargetAttributes = {
+					B514DBC8263384D4007912DA = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B514DBC3263384D4007912DA /* Build configuration list for PBXProject "libcr4shsend" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B514DBBF263384D4007912DA;
+			productRefGroup = B514DBCA263384D4007912DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B514DBC8263384D4007912DA /* libcr4shsend */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B514DBC7263384D4007912DA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B514DBC4263384D4007912DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B514DBD5263384D4007912DA /* libcr4shsend.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B514DBDA263384D4007912DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"libcr4shsend\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B514DBDB263384D4007912DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"libcr4shsend\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		B514DBDD263384D4007912DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libcr4shsend/libcr4shsend-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B514DBDE263384D4007912DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libcr4shsend/libcr4shsend-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B514DBC3263384D4007912DA /* Build configuration list for PBXProject "libcr4shsend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B514DBDA263384D4007912DA /* Release */,
+				B514DBDB263384D4007912DA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B514DBDC263384D4007912DA /* Build configuration list for PBXNativeTarget "libcr4shsend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B514DBDD263384D4007912DA /* Release */,
+				B514DBDE263384D4007912DA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B514DBC0263384D4007912DA /* Project object */;
+}
