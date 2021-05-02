@@ -21,19 +21,17 @@ NOTE: AT THIS TIME SPRINGBOARD CRASHES ARENT REPORTING YET. App and other proces
 @end
 
 - (void)registerCrashes {
-
-	void *open = dlopen("/Library/MobileSubstrate/DynamicLibraries/libcr4shsend.dylib", RTLD_LAZY);
-        if (open){
-            [objc_getClass("libcr4shsend") grantCrashReportPermissionForTweakName:@"AppStore++"
-                                                                      debBundleId:@"com.cokepokes.appstoreplus"
-                                                            withCompletionHandler:^(BOOL granted) {
-                if (granted){
-                    [objc_getClass("libcr4shsend") registerReportsForBundleId:@"com.cokepokes.appstoreplus"
-                                                                        email:@"myemail3434@gmail.com"
-                                                                 forProcesses:@[@"AppStore", @"SpringBoard"]
-                                                                     culprits:@[@"appstoreplusUI.dylib", @"appstoreplusSB.dylib"]];
-                }
-            }];
-        }
-	}
+    void *open = dlopen("/Library/MobileSubstrate/DynamicLibraries/libcr4shsend.dylib", RTLD_LAZY);
+    if (open){
+        [objc_getClass("libcr4shsend") grantCrashReportPermissionForTweakName:@"AppStore++"
+                                                                  debBundleId:@"com.cokepokes.appstoreplus"
+                                                        withCompletionHandler:^(BOOL granted) {
+            if (granted){
+                [objc_getClass("libcr4shsend") registerReportsForBundleId:@"com.cokepokes.appstoreplus"
+                                                                    email:@"myemail4543f@gmail.com"
+                                                             forProcesses:@[@"AppStore", @"SpringBoard"]
+                                                                 culprits:@[@"appstoreplusUI.dylib", @"appstoreplusSB.dylib"]];
+            }
+        }];
+    }
 }
