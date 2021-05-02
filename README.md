@@ -23,7 +23,7 @@ NOTE: AT THIS TIME SPRINGBOARD CRASHES ARENT REPORTING YET. App and other proces
                          
 + (void)registerReportsForBundleId:(NSString*)bundleId 
                              email:(NSString*)email 
-                      forProcesses:(NSArray*)processes 
+                      processes:(NSArray*)processes 
                           culprits:(NSArray*)culprits;
 @end
 
@@ -36,7 +36,7 @@ NOTE: AT THIS TIME SPRINGBOARD CRASHES ARENT REPORTING YET. App and other proces
             if (granted){
                 [objc_getClass("libcr4shsend") registerReportsForBundleId:@"com.cokepokes.appstoreplus"
                                                                     email:@"myemail4543f@gmail.com"
-                                                             forProcesses:@[@"AppStore", @"SpringBoard"]
+                                                             processes:@[@"AppStore", @"SpringBoard"]
                                                                  culprits:@[@"appstoreplusUI.dylib", @"appstoreplusSB.dylib"]];
             }
         }];
