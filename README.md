@@ -36,8 +36,8 @@ NOTE: AT THIS TIME SPRINGBOARD CRASHES ARENT REPORTING YET. App and other proces
             if (granted){
                 [objc_getClass("libcr4shsend") registerReportsForBundleId:@"com.cokepokes.appstoreplus"
                                                                     email:@"myemail4543f@gmail.com"
-                                                             processes:@[@"AppStore", @"SpringBoard"]
-                                                                 culprits:@[@"appstoreplusUI.dylib", @"appstoreplusSB.dylib"]];
+                                                                processes:@[@"AppStore"]
+                                                                 culprits:@[@"appstoreplusUI.dylib"]];
             }
         }];
     }
