@@ -17,7 +17,7 @@ NOTE: AT THIS TIME SPRINGBOARD CRASHES ARENT REPORTING YET. App and other proces
 
 @interface libcr4shsend : NSObject
 + (void)grantCrashReportPermissionForTweakName:(NSString*)tweakName debBundleId:(NSString*)bundleId withCompletionHandler:(void (^)(BOOL granted))block;
-+ (void)registerReportsForBundleId:(NSString*)bundleId email:(NSString*)email forProcesses:(NSArray*)processes culprits:(NSArray*)culprits;
++ (void)registerReportsForBundleId:(NSString*)bundleId email:(NSString*)email processes:(NSArray*)processes culprits:(NSArray*)culprits;
 @end
 
 - (void)registerCrashes {
@@ -29,7 +29,7 @@ NOTE: AT THIS TIME SPRINGBOARD CRASHES ARENT REPORTING YET. App and other proces
             if (granted){
                 [objc_getClass("libcr4shsend") registerReportsForBundleId:@"com.cokepokes.appstoreplus"
                                                                     email:@"myemail4543f@gmail.com"
-                                                             forProcesses:@[@"AppStore", @"SpringBoard"]
+                                                                processes:@[@"AppStore", @"SpringBoard"]
                                                                  culprits:@[@"appstoreplusUI.dylib", @"appstoreplusSB.dylib"]];
             }
         }];
