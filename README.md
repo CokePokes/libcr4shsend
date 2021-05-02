@@ -20,6 +20,7 @@ NOTE: AT THIS TIME SPRINGBOARD CRASHES ARENT REPORTING YET. App and other proces
 + (void)grantCrashReportPermissionForTweakName:(NSString*)tweakName 
                                    debBundleId:(NSString*)bundleId 
                          withCompletionHandler:(void (^)(BOOL granted))block;
+                         
 + (void)registerReportsForBundleId:(NSString*)bundleId 
                              email:(NSString*)email 
                       forProcesses:(NSArray*)processes 
