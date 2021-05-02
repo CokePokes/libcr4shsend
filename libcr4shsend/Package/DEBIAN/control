@@ -1,17 +1,17 @@
 Package: com.cokepokes.libcr4shsend
 Name: libcr4shsend
 Version: 0.1-1
-Description: 
-Section: Tweaks
-Depends: firmware (>= 5.0), mobilesubstrate
+Description: Library for developers to request permission to automatically send crash reports from Cr4shed
+Section: Development
+Depends: firmware (>= 8.0), mobilesubstrate, com.muirey03.cr4shed, com.cokepokes.libtweakemail
 Conflicts: 
-Replaces: 
+Replaces:
 Priority: optional
 Architecture: iphoneos-arm
 Author: CokePokes
 dev: 
 Homepage: 
 Depiction: 
-Maintainer: 
+Maintainer: CokePokes
 Icon: 
 

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [[ $1 == upgrade ]]; then
+	/bin/launchctl unload /Library/LaunchDaemons/com.muirey03.cr4shedd.plist
+fi
+
+killall ReportCrash 2> /dev/null
+
+/bin/launchctl load /Library/LaunchDaemons/com.muirey03.cr4shedd.plist
+
+killall Cr4shed 2> /dev/null
+
+exit 0

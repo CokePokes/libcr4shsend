@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'cr4shedsendhelper' target in the 'cr4shedsendhelper' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+
+#include <os/log.h>
+#define CPLog(fmt, ...) os_log(OS_LOG_DEFAULT, ("\e[4#1mcr4shedsendhelper.dylib\e[m \E[3#2m[Line %d]:\e[m " fmt), __LINE__, ##__VA_ARGS__)
+

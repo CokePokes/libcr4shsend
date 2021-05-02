@@ -9,15 +9,46 @@
 /* Begin PBXBuildFile section */
 		B514DBCD263384D4007912DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B514DBCC263384D4007912DA /* Foundation.framework */; };
 		B514DBD5263384D4007912DA /* libcr4shsend.mm in Sources */ = {isa = PBXBuildFile; fileRef = B514DBD4263384D4007912DA /* libcr4shsend.mm */; };
+		B514DBE52633853D007912DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B514DBCC263384D4007912DA /* Foundation.framework */; };
+		B514DBED2633853D007912DA /* cr4shedsendhelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B514DBEC2633853D007912DA /* cr4shedsendhelper.m */; };
+		B514DBF926338993007912DA /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B514DBF826338993007912DA /* libsubstrate.dylib */; };
+		B514DBFE2633FA62007912DA /* CPUIAlertController+Window.h in Headers */ = {isa = PBXBuildFile; fileRef = B514DBFC2633FA62007912DA /* CPUIAlertController+Window.h */; };
+		B514DBFF2633FA62007912DA /* CPUIAlertController+Window.m in Sources */ = {isa = PBXBuildFile; fileRef = B514DBFD2633FA62007912DA /* CPUIAlertController+Window.m */; };
+		B514DC012634E44C007912DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B514DC002634E44B007912DA /* UIKit.framework */; };
+		B514DC0326360887007912DA /* libcr4shsend-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = B514DC0226360887007912DA /* libcr4shsend-Prefix.pch */; };
+		B514DC54263E29B0007912DA /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = B514DC53263E29B0007912DA /* Headers.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B514DBF626338701007912DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B514DBC0263384D4007912DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B514DBE32633853D007912DA;
+			remoteInfo = cr4shedsendhelper;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B514DBC9263384D4007912DA /* libcr4shsend.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcr4shsend.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		B514DBCC263384D4007912DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B514DBD1263384D4007912DA /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
-		B514DBD3263384D4007912DA /* libcr4shsend-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "libcr4shsend-Prefix.pch"; path = "../libcr4shsend-Prefix.pch"; sourceTree = "<group>"; };
 		B514DBD4263384D4007912DA /* libcr4shsend.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = libcr4shsend.mm; sourceTree = "<group>"; };
 		B514DBD9263384D4007912DA /* libcr4shsend.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = libcr4shsend.plist; sourceTree = "<group>"; };
+		B514DBE42633853D007912DA /* cr4shedsendhelper.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = cr4shedsendhelper.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B514DBE92633853D007912DA /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		B514DBEB2633853D007912DA /* cr4shedsendhelper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "cr4shedsendhelper-Prefix.pch"; path = "../cr4shedsendhelper-Prefix.pch"; sourceTree = "<group>"; };
+		B514DBEC2633853D007912DA /* cr4shedsendhelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cr4shedsendhelper.m; sourceTree = "<group>"; };
+		B514DBF12633853D007912DA /* cr4shedsendhelper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = cr4shedsendhelper.plist; sourceTree = "<group>"; };
+		B514DBF826338993007912DA /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../opt/MonkeyDev/Frameworks/libsubstrate.dylib; sourceTree = "<group>"; };
+		B514DBFC2633FA62007912DA /* CPUIAlertController+Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPUIAlertController+Window.h"; sourceTree = "<group>"; };
+		B514DBFD2633FA62007912DA /* CPUIAlertController+Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CPUIAlertController+Window.m"; sourceTree = "<group>"; };
+		B514DC002634E44B007912DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B514DC0226360887007912DA /* libcr4shsend-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "libcr4shsend-Prefix.pch"; path = "libcr4shsend/libcr4shsend-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		B514DC042636350F007912DA /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = postinst; sourceTree = "<group>"; };
+		B514DC052636350F007912DA /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = prerm; sourceTree = "<group>"; };
+		B514DC062636D4F9007912DA /* cr4shedsendhelper.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = cr4shedsendhelper.plist; sourceTree = "<group>"; };
+		B514DC53263E29B0007912DA /* Headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,7 +56,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B514DC012634E44C007912DA /* UIKit.framework in Frameworks */,
 				B514DBCD263384D4007912DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B514DBE02633853D007912DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B514DBF926338993007912DA /* libsubstrate.dylib in Frameworks */,
+				B514DBE52633853D007912DA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				B514DBCE263384D4007912DA /* libcr4shsend */,
+				B514DBE62633853D007912DA /* cr4shedsendhelper */,
 				B514DBCB263384D4007912DA /* Frameworks */,
 				B514DBCA263384D4007912DA /* Products */,
 			);
@@ -45,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				B514DBC9263384D4007912DA /* libcr4shsend.dylib */,
+				B514DBE42633853D007912DA /* cr4shedsendhelper.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +95,8 @@
 		B514DBCB263384D4007912DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B514DC002634E44B007912DA /* UIKit.framework */,
+				B514DBF826338993007912DA /* libsubstrate.dylib */,
 				B514DBCC263384D4007912DA /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -60,6 +105,7 @@
 		B514DBCE263384D4007912DA /* libcr4shsend */ = {
 			isa = PBXGroup;
 			children = (
+				B514DBFA2633FA62007912DA /* Utilities */,
 				B514DBD4263384D4007912DA /* libcr4shsend.mm */,
 				B514DBCF263384D4007912DA /* Package */,
 				B514DBD2263384D4007912DA /* Supporting Files */,
@@ -79,6 +125,8 @@
 		B514DBD0263384D4007912DA /* DEBIAN */ = {
 			isa = PBXGroup;
 			children = (
+				B514DC042636350F007912DA /* postinst */,
+				B514DC052636350F007912DA /* prerm */,
 				B514DBD1263384D4007912DA /* control */,
 			);
 			path = DEBIAN;
@@ -87,7 +135,7 @@
 		B514DBD2263384D4007912DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B514DBD3263384D4007912DA /* libcr4shsend-Prefix.pch */,
+				B514DC0226360887007912DA /* libcr4shsend-Prefix.pch */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -111,9 +159,87 @@
 		B514DBD8263384D4007912DA /* DynamicLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				B514DC062636D4F9007912DA /* cr4shedsendhelper.plist */,
 				B514DBD9263384D4007912DA /* libcr4shsend.plist */,
 			);
 			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		B514DBE62633853D007912DA /* cr4shedsendhelper */ = {
+			isa = PBXGroup;
+			children = (
+				B514DC53263E29B0007912DA /* Headers.h */,
+				B514DBEC2633853D007912DA /* cr4shedsendhelper.m */,
+				B514DBE72633853D007912DA /* Package */,
+				B514DBEA2633853D007912DA /* Supporting Files */,
+			);
+			path = cr4shedsendhelper;
+			sourceTree = "<group>";
+		};
+		B514DBE72633853D007912DA /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBE82633853D007912DA /* DEBIAN */,
+				B514DBEE2633853D007912DA /* Library */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		B514DBE82633853D007912DA /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBE92633853D007912DA /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		B514DBEA2633853D007912DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBEB2633853D007912DA /* cr4shedsendhelper-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B514DBEE2633853D007912DA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBEF2633853D007912DA /* MobileSubstrate */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		B514DBEF2633853D007912DA /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBF02633853D007912DA /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		B514DBF02633853D007912DA /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBF12633853D007912DA /* cr4shedsendhelper.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		B514DBFA2633FA62007912DA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBFB2633FA62007912DA /* CPUIAlertViewController */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B514DBFB2633FA62007912DA /* CPUIAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B514DBFC2633FA62007912DA /* CPUIAlertController+Window.h */,
+				B514DBFD2633FA62007912DA /* CPUIAlertController+Window.m */,
+			);
+			path = CPUIAlertViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +249,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B514DC0326360887007912DA /* libcr4shsend-Prefix.pch in Headers */,
+				B514DBFE2633FA62007912DA /* CPUIAlertController+Window.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B514DBE12633853D007912DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B514DC54263E29B0007912DA /* Headers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +277,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				B514DBF726338701007912DA /* PBXTargetDependency */,
 			);
 			name = libcr4shsend;
 			productName = libcr4shsend;
 			productReference = B514DBC9263384D4007912DA /* libcr4shsend.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		B514DBE32633853D007912DA /* cr4shedsendhelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B514DBF22633853D007912DA /* Build configuration list for PBXNativeTarget "cr4shedsendhelper" */;
+			buildPhases = (
+				B514DBDF2633853D007912DA /* Sources */,
+				B514DBE02633853D007912DA /* Frameworks */,
+				B514DBE12633853D007912DA /* Headers */,
+				B514DBE22633853D007912DA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cr4shedsendhelper;
+			productName = cr4shedsendhelper;
+			productReference = B514DBE42633853D007912DA /* cr4shedsendhelper.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -156,6 +311,9 @@
 				LastUpgradeCheck = 1140;
 				TargetAttributes = {
 					B514DBC8263384D4007912DA = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					B514DBE32633853D007912DA = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
@@ -174,6 +332,7 @@
 			projectRoot = "";
 			targets = (
 				B514DBC8263384D4007912DA /* libcr4shsend */,
+				B514DBE32633853D007912DA /* cr4shedsendhelper */,
 			);
 		};
 /* End PBXProject section */
@@ -194,7 +353,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp\n";
+		};
+		B514DBE22633853D007912DA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ldid -S \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME\"\ncp \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME\" \"$SRCROOT/libcr4shsend/Package/Library/MobileSubstrate/DynamicLibraries/$EXECUTABLE_NAME\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -204,15 +380,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				B514DBD5263384D4007912DA /* libcr4shsend.mm in Sources */,
+				B514DBFF2633FA62007912DA /* CPUIAlertController+Window.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B514DBDF2633853D007912DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B514DBED2633853D007912DA /* cr4shedsendhelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B514DBF726338701007912DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B514DBE32633853D007912DA /* cr4shedsendhelper */;
+			targetProxy = B514DBF626338701007912DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		B514DBDA263384D4007912DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv7s,
+					arm64,
+					arm64e,
+				);
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = YES;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -231,6 +435,7 @@
 				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"libcr4shsend\\\"\"";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -238,6 +443,17 @@
 		B514DBDB263384D4007912DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv7s,
+					arm64,
+					arm64e,
+				);
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -264,6 +480,7 @@
 				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"libcr4shsend\\\"\"";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = YES;
 				VALIDATE_PRODUCT = NO;
 			};
 			name = Debug;
@@ -271,9 +488,15 @@
 		B514DBDD263384D4007912DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+					arm64,
+					arm64e,
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -283,15 +506,15 @@
 					"$(MonkeyDevTheosPath)/vendor/include/**",
 				);
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
-				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevBuildPackageOnAnyBuild = YES;
 				MonkeyDevClearUiCacheOnInstall = NO;
 				MonkeyDevCopyOnBuild = NO;
-				MonkeyDevDeviceIP = "";
+				MonkeyDevDeviceIP = 192.168.1.82;
 				MonkeyDevDevicePassword = "";
 				MonkeyDevDevicePort = "";
 				MonkeyDevInstallOnAnyBuild = YES;
 				MonkeyDevInstallOnProfiling = YES;
-				MonkeyDevkillProcessOnInstall = SpringBoard;
+				MonkeyDevkillProcessOnInstall = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,9 +523,15 @@
 		B514DBDE263384D4007912DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+					arm64,
+					arm64e,
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -312,15 +541,107 @@
 					"$(MonkeyDevTheosPath)/vendor/include/**",
 				);
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = YES;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 192.168.1.82;
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B514DBF32633853D007912DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+					arm64,
+					arm64e,
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = /Library/MobileSubstrate/DynamicLibraries;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cr4shedsendhelper/cr4shedsendhelper-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/MonkeyDev/Frameworks,
+					"$(PROJECT_DIR)/cr4shedsendhelper/MAObjcRuntime",
+				);
 				MonkeyDevBuildPackageOnAnyBuild = NO;
 				MonkeyDevClearUiCacheOnInstall = NO;
 				MonkeyDevCopyOnBuild = NO;
 				MonkeyDevDeviceIP = "";
 				MonkeyDevDevicePassword = "";
 				MonkeyDevDevicePort = "";
-				MonkeyDevInstallOnAnyBuild = YES;
-				MonkeyDevInstallOnProfiling = YES;
-				MonkeyDevkillProcessOnInstall = SpringBoard;
+				MonkeyDevInstallOnAnyBuild = NO;
+				MonkeyDevInstallOnProfiling = NO;
+				MonkeyDevkillProcessOnInstall = "";
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"cr4shedsendhelper\\\"\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B514DBF42633853D007912DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+					arm64,
+					arm64e,
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = /Library/MobileSubstrate/DynamicLibraries;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cr4shedsendhelper/cr4shedsendhelper-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/MonkeyDev/Frameworks,
+					"$(PROJECT_DIR)/cr4shedsendhelper/MAObjcRuntime",
+				);
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = NO;
+				MonkeyDevInstallOnProfiling = NO;
+				MonkeyDevkillProcessOnInstall = "";
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"cr4shedsendhelper\\\"\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -343,6 +664,15 @@
 			buildConfigurations = (
 				B514DBDD263384D4007912DA /* Release */,
 				B514DBDE263384D4007912DA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B514DBF22633853D007912DA /* Build configuration list for PBXNativeTarget "cr4shedsendhelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B514DBF32633853D007912DA /* Release */,
+				B514DBF42633853D007912DA /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
