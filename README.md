@@ -40,5 +40,6 @@ NOTE: AT THIS TIME SPRINGBOARD CRASHES ARENT REPORTING YET. App and other proces
                                                                  culprits:@[@"appstoreplusUI.dylib"]];
             }
         }];
+        dlclose(open);
     }
 }
