@@ -23,7 +23,7 @@ NOTE: AT THIS TIME SPRINGBOARD CRASHES ARENT REPORTING YET. App and other proces
                          
 + (void)registerReportsForBundleId:(NSString*)bundleId 
                              email:(NSString*)email 
-                      processes:(NSArray*)processes 
+                         processes:(NSArray*)processes 
                           culprits:(NSArray*)culprits;
 @end
 
