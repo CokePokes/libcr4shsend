@@ -17,8 +17,13 @@ NOTE: AT THIS TIME SPRINGBOARD CRASHES ARENT REPORTING YET. App and other proces
 #include <dlfcn.h>
 
 @interface libcr4shsend : NSObject
-+ (void)grantCrashReportPermissionForTweakName:(NSString*)tweakName debBundleId:(NSString*)bundleId withCompletionHandler:(void (^)(BOOL granted))block;
-+ (void)registerReportsForBundleId:(NSString*)bundleId email:(NSString*)email forProcesses:(NSArray*)processes culprits:(NSArray*)culprits;
++ (void)grantCrashReportPermissionForTweakName:(NSString*)tweakName 
+                                   debBundleId:(NSString*)bundleId 
+                         withCompletionHandler:(void (^)(BOOL granted))block;
++ (void)registerReportsForBundleId:(NSString*)bundleId 
+                             email:(NSString*)email 
+                      forProcesses:(NSArray*)processes 
+                          culprits:(NSArray*)culprits;
 @end
 
 - (void)registerCrashes {
