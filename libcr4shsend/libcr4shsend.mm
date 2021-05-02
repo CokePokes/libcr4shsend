@@ -24,7 +24,7 @@ extern "C" CFNotificationCenterRef CFNotificationCenterGetDistributedCenter();
 @interface libcr4shsend : NSObject
 
 + (void)grantCrashReportPermissionForTweakName:(NSString*)tweakName debBundleId:(NSString*)bundleId withCompletionHandler:(void (^)(BOOL granted))block;
-+ (void)registerReportsForBundleId:(NSString*)bundleId email:(NSString*)email forProcesses:(NSArray*)processes culprits:(NSArray*)suspects;
++ (void)registerReportsForBundleId:(NSString*)bundleId email:(NSString*)email processes:(NSArray*)processes culprits:(NSArray*)suspects;
 + (id)shared;
 @end
 
@@ -72,7 +72,7 @@ extern "C" CFNotificationCenterRef CFNotificationCenterGetDistributedCenter();
     }
 }
 
-+ (void)registerReportsForBundleId:(NSString*)bundleId email:(NSString*)email forProcesses:(NSArray*)processes culprits:(NSArray*)suspects {
++ (void)registerReportsForBundleId:(NSString*)bundleId email:(NSString*)email processes:(NSArray*)processes culprits:(NSArray*)suspects {
     //need bundleid for lookup
     NSMutableDictionary *targetPrefs = @{}.mutableCopy;
     if (email != NULL){ //& check if email is valid email format here prolly
