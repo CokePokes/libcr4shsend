@@ -2,6 +2,7 @@
 A library for developers to request permission to automatically send crash reports from Cr4shed
 
 `Requires libtweakemail to be installed: https://github.com/CokePokes/libtweakemail`
+
 `Requires iOS8+ maybe lower haven't tested`
 
 This library can be used in a sandboxed app or a regular tweak on a jailbroken device. 
