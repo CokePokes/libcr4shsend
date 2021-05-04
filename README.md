@@ -10,8 +10,6 @@ This library can be used in a sandboxed app or a regular tweak on a jailbroken d
 How to use in your tweak/app:
 
 
-NOTE: AT THIS TIME SPRINGBOARD CRASHES ARENT REPORTING YET. App and other processes report fine. 
-
 ```objc
 
 #include <dlfcn.h>
