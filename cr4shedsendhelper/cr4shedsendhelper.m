@@ -58,9 +58,6 @@ typedef void (^SwitchCompletionBlock)(UISwitch *uiSwitch);
 
 CHDeclareClass(Cr4shedServer);
 CHOptimizedMethod1(self, NSDictionary*, Cr4shedServer, writeString, NSDictionary*, dict){
-    
-    CPLog("------------- writestring called");
-    
     NSString *crashlog = dict[@"string"];
     NSDictionary *info = getInfoFromLog(crashlog);
     NSString *culprit = info[@"Culprit"];
@@ -68,7 +65,7 @@ CHOptimizedMethod1(self, NSDictionary*, Cr4shedServer, writeString, NSDictionary
     NSString *processName = info[@"ProcessName"];
 
     id orig = CHSuper1(Cr4shedServer, writeString, dict);
-    void *open = dlopen("/Library/MobileSubstrate/DynamicLibraries/libtweakemail.dylib", RTLD_LAZY);
+    void *open = dlopen("/usr/lib/libtweakemail.dylib", RTLD_LAZY);
     if (open){
         NSArray *matchingTweaks = [cr4shedsendhelper arrayofMatchingTweakCulprit:culprit processName:processName];
         NSString *filePath = @"/private/var/mobile/Library/Preferences/com.cokepokes.libcr4shsend.plist";
@@ -99,30 +96,30 @@ CHOptimizedMethod1(self, NSDictionary*, Cr4shedServer, writeString, NSDictionary
     if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]){
         prefs = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];
     }
+    
     NSMutableArray *matchingBundleIdsForCrash = @[].mutableCopy;
-    NSArray *dictionaries = [prefs allValues];
-    for (NSDictionary *dic in dictionaries){
-        if ([dic objectForKey:@"suspects"]) {
-            for (NSString*string in [dic objectForKey:@"suspects"]) {
-                if ([string isEqualToString:culprit]){
-                    NSArray *temp = [prefs allKeysForObject:dic];
-                    NSString *key = [temp objectAtIndex:0];
-                    [matchingBundleIdsForCrash addObject:key];
-                }
+    NSArray *allKeyz = [prefs allKeys];
+
+    for (NSString *key in allKeyz) {
+        NSDictionary *singlePref = [prefs objectForKey:key];
+        NSArray *arrayOfCulprits = [singlePref objectForKey:@"culprits"];
+        NSArray *arrayOfProcesses = [singlePref objectForKey:@"processes"];
+
+        BOOL foundCulprit = NO; BOOL foundProcess = NO;
+        
+        for (NSString*culStr in arrayOfCulprits) {
+            if ([culStr isEqualToString:culprit]){
+                foundCulprit = YES; break;
             }
         }
-        if ([dic objectForKey:@"processes"]) {
-            for (NSString*string in [dic objectForKey:@"processes"]) {
-                if ([string isEqualToString:culprit]){
-                    NSArray *temp = [prefs allKeysForObject:dic];
-                    NSString *key = [temp objectAtIndex:0];
-                    [matchingBundleIdsForCrash addObject:key];
-                }
+        for (NSString*proStr in arrayOfProcesses) {
+            if ([proStr isEqualToString:processName]){
+                foundProcess = YES; break;
             }
         }
-    }
-    for (NSString *str in matchingBundleIdsForCrash) {
-        CPLog("matchingBundleIdsForCrash: %{public}@", str);
+        if (foundProcess && foundCulprit) { //matches process & culprit
+            [matchingBundleIdsForCrash addObject:key];
+        }
     }
     return matchingBundleIdsForCrash.copy;
 }
@@ -146,7 +143,7 @@ MSHook(void, writeStringToFile, NSString *str, NSString *path) {
     NSString *processName = info[@"ProcessName"];
     //NSString *processBundleID = info[@"ProcessBundleID"];
     
-    void *open = dlopen("/Library/MobileSubstrate/DynamicLibraries/libtweakemail.dylib", RTLD_LAZY);
+    void *open = dlopen("/usr/lib/libtweakemail.dylib", RTLD_LAZY);
     if (open){
         NSArray *matchingTweaks = [cr4shedsendhelper arrayofMatchingTweakCulprit:culprit processName:processName];
         NSString *filePath = @"/private/var/mobile/Library/Preferences/com.cokepokes.libcr4shsend.plist";
