@@ -4,9 +4,11 @@ if [[ $1 == upgrade ]]; then
 	/bin/launchctl unload /Library/LaunchDaemons/com.muirey03.cr4shedd.plist
 fi
 
-killall ReportCrash 2> /dev/null
-
+killall cr4shedd 2> /dev/null
 /bin/launchctl load /Library/LaunchDaemons/com.muirey03.cr4shedd.plist
+
+/bin/launchctl unload /System/Library/LaunchDaemons/com.apple.ReportCrash.plist
+/bin/launchctl load /System/Library/LaunchDaemons/com.apple.ReportCrash.plist
 
 killall Cr4shed 2> /dev/null
 

@@ -1,9 +1,12 @@
 #!/bin/sh
 
 /bin/launchctl unload /Library/LaunchDaemons/com.muirey03.cr4shedd.plist
+killall cr4shedd 2> /dev/null
+
 /bin/launchctl load /Library/LaunchDaemons/com.muirey03.cr4shedd.plist
 
-killall ReportCrash 2> /dev/null
+/bin/launchctl unload /System/Library/LaunchDaemons/com.apple.ReportCrash.plist
+/bin/launchctl load /System/Library/LaunchDaemons/com.apple.ReportCrash.plist
 
 
 exit 0
