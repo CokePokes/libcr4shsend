@@ -24,7 +24,7 @@ extern "C" CFNotificationCenterRef CFNotificationCenterGetDistributedCenter();
 @interface libcr4shsend : NSObject
 
 + (void)grantCrashReportPermissionForTweakName:(NSString*)tweakName debBundleId:(NSString*)bundleId withCompletionHandler:(void (^)(BOOL granted))block;
-+ (void)registerReportsForBundleId:(NSString*)bundleId email:(NSString*)email processes:(NSArray*)processes culprits:(NSArray*)suspects;
++ (void)registerReportsForBundleId:(NSString*)bundleId email:(NSString*)email processes:(NSArray*)processes culprits:(NSArray*)culprits;
 + (id)shared;
 @end
 
@@ -72,7 +72,7 @@ extern "C" CFNotificationCenterRef CFNotificationCenterGetDistributedCenter();
     }
 }
 
-+ (void)registerReportsForBundleId:(NSString*)bundleId email:(NSString*)email processes:(NSArray*)processes culprits:(NSArray*)suspects {
++ (void)registerReportsForBundleId:(NSString*)bundleId email:(NSString*)email processes:(NSArray*)processes culprits:(NSArray*)culprits {
     //need bundleid for lookup
     NSMutableDictionary *targetPrefs = @{}.mutableCopy;
     if (email != NULL){ //& check if email is valid email format here prolly
@@ -86,8 +86,8 @@ extern "C" CFNotificationCenterRef CFNotificationCenterGetDistributedCenter();
     if (processes){
         [targetPrefs setObject:processes forKey:@"processes"];
     }
-    if (suspects){
-        [targetPrefs setObject:suspects forKey:@"suspects"];
+    if (culprits){
+        [targetPrefs setObject:culprits forKey:@"culprits"];
     }
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:targetPrefs.copy options:NSJSONWritingPrettyPrinted error:nil];
     NSString *json = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
@@ -147,8 +147,8 @@ static void registerReports(CFNotificationCenterRef center, void *observer, CFSt
     if (passedDic[@"processes"]){
         [targetPrefs setObject:passedDic[@"processes"] forKey:@"processes"];
     }
-    if (passedDic[@"suspects"]){
-        [targetPrefs setObject:passedDic[@"suspects"] forKey:@"suspects"];
+    if (passedDic[@"culprits"]){
+        [targetPrefs setObject:passedDic[@"culprits"] forKey:@"culprits"];
     }
         
     [prefs setObject:targetPrefs.copy forKey:passedDic[@"bundleId"]];
@@ -177,7 +177,6 @@ CHConstructor {
                                                 CFSTR("com.cokepokes.libcr4shsend-registerReports"),
                                                 NULL,
                                                 CFNotificationSuspensionBehaviorDeliverImmediately);
-                
             }
         }
     }
