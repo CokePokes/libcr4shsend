@@ -33,13 +33,16 @@ NOTE: AT THIS TIME SPRINGBOARD CRASHES ARENT REPORTING YET. App and other proces
         [objc_getClass("libcr4shsend") grantCrashReportPermissionForTweakName:@"AppStore++"
                                                                   debBundleId:@"com.cokepokes.appstoreplus"
                                                         withCompletionHandler:^(BOOL granted) {
+            
+            [objc_getClass("libcr4shsend") registerReportsForBundleId:@"com.cokepokes.appstoreplus"
+                                                                email:@"myemail4543f@gmail.com"
+                                                            processes:@[@"AppStore"]
+                                                            culprits:@[@"appstoreplusUI.dylib"]];
             if (granted){
-                [objc_getClass("libcr4shsend") registerReportsForBundleId:@"com.cokepokes.appstoreplus"
-                                                                    email:@"myemail4543f@gmail.com"
-                                                                processes:@[@"AppStore"]
-                                                                 culprits:@[@"appstoreplusUI.dylib"]];
+                //do other things if granted. dont put registerReportsForBundleId here
             }
-        }];
+            
+            }];
         dlclose(open);
     }
 }
