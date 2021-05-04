@@ -8,13 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B514DBCD263384D4007912DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B514DBCC263384D4007912DA /* Foundation.framework */; };
-		B514DBD5263384D4007912DA /* libcr4shsend.mm in Sources */ = {isa = PBXBuildFile; fileRef = B514DBD4263384D4007912DA /* libcr4shsend.mm */; };
+		B514DBD5263384D4007912DA /* libcr4shsend.m in Sources */ = {isa = PBXBuildFile; fileRef = B514DBD4263384D4007912DA /* libcr4shsend.m */; };
 		B514DBE52633853D007912DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B514DBCC263384D4007912DA /* Foundation.framework */; };
 		B514DBED2633853D007912DA /* cr4shedsendhelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B514DBEC2633853D007912DA /* cr4shedsendhelper.m */; };
 		B514DBF926338993007912DA /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B514DBF826338993007912DA /* libsubstrate.dylib */; };
-		B514DBFE2633FA62007912DA /* CPUIAlertController+Window.h in Headers */ = {isa = PBXBuildFile; fileRef = B514DBFC2633FA62007912DA /* CPUIAlertController+Window.h */; };
-		B514DBFF2633FA62007912DA /* CPUIAlertController+Window.m in Sources */ = {isa = PBXBuildFile; fileRef = B514DBFD2633FA62007912DA /* CPUIAlertController+Window.m */; };
-		B514DC012634E44C007912DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B514DC002634E44B007912DA /* UIKit.framework */; };
 		B514DC0326360887007912DA /* libcr4shsend-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = B514DC0226360887007912DA /* libcr4shsend-Prefix.pch */; };
 		B514DC54263E29B0007912DA /* Headers.h in Headers */ = {isa = PBXBuildFile; fileRef = B514DC53263E29B0007912DA /* Headers.h */; };
 /* End PBXBuildFile section */
@@ -33,7 +30,7 @@
 		B514DBC9263384D4007912DA /* libcr4shsend.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcr4shsend.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		B514DBCC263384D4007912DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B514DBD1263384D4007912DA /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
-		B514DBD4263384D4007912DA /* libcr4shsend.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = libcr4shsend.mm; sourceTree = "<group>"; };
+		B514DBD4263384D4007912DA /* libcr4shsend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libcr4shsend.m; sourceTree = "<group>"; };
 		B514DBD9263384D4007912DA /* libcr4shsend.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = libcr4shsend.plist; sourceTree = "<group>"; };
 		B514DBE42633853D007912DA /* cr4shedsendhelper.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = cr4shedsendhelper.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		B514DBE92633853D007912DA /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
@@ -41,9 +38,6 @@
 		B514DBEC2633853D007912DA /* cr4shedsendhelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cr4shedsendhelper.m; sourceTree = "<group>"; };
 		B514DBF12633853D007912DA /* cr4shedsendhelper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = cr4shedsendhelper.plist; sourceTree = "<group>"; };
 		B514DBF826338993007912DA /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../opt/MonkeyDev/Frameworks/libsubstrate.dylib; sourceTree = "<group>"; };
-		B514DBFC2633FA62007912DA /* CPUIAlertController+Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPUIAlertController+Window.h"; sourceTree = "<group>"; };
-		B514DBFD2633FA62007912DA /* CPUIAlertController+Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CPUIAlertController+Window.m"; sourceTree = "<group>"; };
-		B514DC002634E44B007912DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B514DC0226360887007912DA /* libcr4shsend-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "libcr4shsend-Prefix.pch"; path = "libcr4shsend/libcr4shsend-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		B514DC042636350F007912DA /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = postinst; sourceTree = "<group>"; };
 		B514DC052636350F007912DA /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = prerm; sourceTree = "<group>"; };
@@ -56,7 +50,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B514DC012634E44C007912DA /* UIKit.framework in Frameworks */,
 				B514DBCD263384D4007912DA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,7 +88,6 @@
 		B514DBCB263384D4007912DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B514DC002634E44B007912DA /* UIKit.framework */,
 				B514DBF826338993007912DA /* libsubstrate.dylib */,
 				B514DBCC263384D4007912DA /* Foundation.framework */,
 			);
@@ -105,8 +97,7 @@
 		B514DBCE263384D4007912DA /* libcr4shsend */ = {
 			isa = PBXGroup;
 			children = (
-				B514DBFA2633FA62007912DA /* Utilities */,
-				B514DBD4263384D4007912DA /* libcr4shsend.mm */,
+				B514DBD4263384D4007912DA /* libcr4shsend.m */,
 				B514DBCF263384D4007912DA /* Package */,
 				B514DBD2263384D4007912DA /* Supporting Files */,
 			);
@@ -225,23 +216,6 @@
 			path = DynamicLibraries;
 			sourceTree = "<group>";
 		};
-		B514DBFA2633FA62007912DA /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				B514DBFB2633FA62007912DA /* CPUIAlertViewController */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		B514DBFB2633FA62007912DA /* CPUIAlertViewController */ = {
-			isa = PBXGroup;
-			children = (
-				B514DBFC2633FA62007912DA /* CPUIAlertController+Window.h */,
-				B514DBFD2633FA62007912DA /* CPUIAlertController+Window.m */,
-			);
-			path = CPUIAlertViewController;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -250,7 +224,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B514DC0326360887007912DA /* libcr4shsend-Prefix.pch in Headers */,
-				B514DBFE2633FA62007912DA /* CPUIAlertController+Window.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,8 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B514DBD5263384D4007912DA /* libcr4shsend.mm in Sources */,
-				B514DBFF2633FA62007912DA /* CPUIAlertController+Window.m in Sources */,
+				B514DBD5263384D4007912DA /* libcr4shsend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
